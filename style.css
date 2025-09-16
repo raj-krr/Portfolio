@@ -2,7 +2,8 @@
             --primary-color: rgb(59, 91, 159);
             --secondary-color: #e7d7ef;
             
-            --background: rgba(236, 182, 251, 0.911);
+            --background: rgba(229, 182, 236, 0.867); 
+            /* --background: rgba(135, 31, 161, 0.882) */
            
         }
         
@@ -167,3 +168,39 @@
                 font-size: 2.5rem;
             }
         }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            padding: 50px 0 20px;
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .social-link:hover {
+            background: var(--primary-color);
+        }
+        
+        .copyright {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+        
