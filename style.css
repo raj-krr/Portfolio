@@ -2,7 +2,7 @@
             --primary-color: rgb(59, 91, 159);
             --secondary-color: #e7d7ef;
             
-            --background: rgb(98, 27, 116);
+            --background: rgba(236, 182, 251, 0.911);
            
         }
         
@@ -16,7 +16,7 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             
-            color:whitesmoke;
+            color:whi;
             background: var(--background);
             
         }
@@ -56,9 +56,9 @@
         } 
        
          
-        /* Header & Navigation */
+        /* Header  */
         header {
-            background: var(--background);
+            background: rgba(135, 31, 161, 0.882);
             position: fixed;
             width: 100%;
 
@@ -88,7 +88,7 @@
         }
         
         .nav-link {
-            color: var(--text-color);
+            color: black;
             font-weight: 500;
         }
         
@@ -96,7 +96,7 @@
             color: var(--primary-color);
         }
          
-        
+        /* hero */
         .hero {
             height: 100vh;
             display: flex;
@@ -119,4 +119,51 @@
             font-size: 1.5rem;
             color: rgb(163, 56, 193);
             margin-bottom: 30px;
+        }
+
+         /* About Section */
+         .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2rem;
+           
+        }
+        
+        .about-content {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-text h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        
+        .about-text p {
+            margin-bottom: 15px;
+            color: rgba(0, 0, 0, 0.816);
+        }
+
+        /*for responsive/style */
+        @media (max-width: 980px) {
+            .about-content{
+             
+                grid-template-columns: 1fr;
+            } 
+         .hero-title {
+                font-size: 2.5rem;
+            }
         }
