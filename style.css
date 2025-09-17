@@ -16,8 +16,7 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            
-            color:whi;
+
             background: var(--background);
             
         }
@@ -131,6 +130,7 @@
             text-align: center;
             margin-bottom: 50px;
             font-size: 2rem;
+        
            
         }
         
@@ -205,8 +205,9 @@
 
         /* Contact Section */
 .contacts{
-    background: var(--secondary-color);
+    background: ;
 }
+
 
         .contact-container {
             display: grid;
@@ -217,7 +218,9 @@
         .contact-info {
             margin-bottom: 30px;
         }
-        
+        .contact-info p{
+            margin-bottom: 15px;
+        }
         .contact-item {
             display: flex;
             align-items: center;
@@ -240,6 +243,7 @@
             background: var(--secondary-color);
             padding: 30px;
             border-radius: 10px;
+            margin-bottom: 40px;
         }
         
         .form-group {
@@ -263,6 +267,65 @@
             .contact-container{
                 grid-template-columns: 1fr;
             }
+        }
+        
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .project{
+            background: var(--secondary-color);
+        }
+        .project-card {
+            background:white;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px  rgb(175, 130, 216);
+            
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .project-img {
+            
+            height: 200px;
+            background: rgb(246, 243, 243);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+       
+        }
+        
+        .project-info {
+            padding: 20px;
+        }
+        
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .project-desc {
+            
+            margin-bottom: 15px;
+        }
+        
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .tech-tag {
+            background: var(--primary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
         }
         
         
