@@ -327,5 +327,29 @@
             border-radius: 20px;
             font-size: 0.8rem;
         }
+
+        /* skill section */
+        .skill{
+            background:var(--secondary-color) ;
+        }
+        .skill-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+            gap: 30px;
+        }
+        .skill-card {
+            height: 200px;
+            background:white;
+             border-radius: 10px;
+             box-shadow: 5px 5px 5px  rgb(175, 130, 216); 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } 
+        .skill-card img{
+            height: 200px;
+
+        }
+
         
         
